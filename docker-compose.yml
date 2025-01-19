@@ -6,15 +6,11 @@ services:
       context: ./social-network-front
       dockerfile: Dockerfile
     ports:
-      - "4200:80" # Пробрасываем порт 80 контейнера на порт 4200 хоста
-    depends_on:
-      - backend
+      - "4200:80"  # Доступ к фронтенду на порту 4200
 
   backend:
     build:
       context: ./SocialNetworkBack
       dockerfile: Dockerfile
     ports:
-      - "5000:80" # Пробрасываем порт 80 контейнера на порт 5000 хоста
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - "5000:80"  # Доступ к бекенду на порту 5000
