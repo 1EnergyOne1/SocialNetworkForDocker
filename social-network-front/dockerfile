@@ -20,7 +20,7 @@
    FROM nginx:alpine
 
    # Копируем собранные файлы в директорию Nginx
-   COPY --from=build ./dist/social-network-front /usr/share/nginx/html
+   COPY --from=build /app/dist/social-network-front /usr/share/nginx/html
 
    # Открываем порт 80
    EXPOSE 80
