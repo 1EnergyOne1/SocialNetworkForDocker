@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZV4hGmRgVi8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\energ\\source\\repos\\SocialNetworkBack\\SocialNetworkBack.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\energ\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  socialnetworkback:
+    build:
+      context: ./SocialNetworkBack
+    ports:
+      - "5000:80" # Порт, на котором будет доступно API
+
+  social-network-front:
+    build:
+      context: ./
+    ports:
+      - "4200:80" # Порт, на котором будет доступно клиентское приложение
+    depends_on:
+      - socialnetworkback
